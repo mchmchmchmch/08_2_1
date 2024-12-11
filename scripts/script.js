@@ -1,5 +1,5 @@
 let menu = document.querySelector(".container ul");
-let menuToggle = document.querySelector(".menu-toggle");
+let menuToggle = document.querySelector(".hamburger");
 
 menuToggle.addEventListener("click", function(e){
     e.preventDefault();
