@@ -1,9 +1,9 @@
-let menu = document.querySelector('container ul');
+let menu = document.querySelector('.container ul');
 let menuToggle = document.querySelector('.hamburger');
 
-menuToggle.addEventListener("click", function(e){
+menuToggle.addEventListener('click', function(e){
     e.preventDefault();
-    menu.classList.toggle("show-menu");
+    menu.classList.toggle('show-menu');
 });
 
 const slider = document.querySelector('.texts');
