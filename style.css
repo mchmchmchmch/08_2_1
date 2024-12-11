@@ -613,7 +613,7 @@ h2 {
     padding-right: 39px;
 }
 
-.burger {
+.burger-container {
     display: none;
 }
 
@@ -633,10 +633,26 @@ h2 {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 720px) {
-    body {
-        margin: 0 auto;
-        overflow-x: hidden;
+.burger-n-menu{
+    display: none;
+}
+
+.container ul{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    .first .img-center{
+        width: 80%;
     }
 
     .texts {
@@ -655,19 +671,23 @@ h2 {
         display: none;
     }
 
-    .show-menu {
-        display: none;
-    }
-
     .container ul.show-menu {
+        list-style-type: none;
         font-weight: bold;
-        padding-right: 89px;
         margin: 0 auto;
         width: 100%;
-        text-align: right;
+        text-align: center;
         flex-direction: column;
         display: flex;
-        gap: 16px;
+        gap: 8px;
+    }
+
+    .superpeer-bigger{
+        width: 24px;
+    }
+
+    .show-menu {
+        display: none;
     }
 
     .first-bg img {
@@ -680,6 +700,8 @@ h2 {
     }
 
     .header {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -687,22 +709,13 @@ h2 {
         width: 100%;
     }
 
-    .burger {
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
-
     .burger-container {
-        gap: 200%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-    }
-
-    .header-logo {
-        width: 96px;
+        gap: 50px;
+        flex: auto;
+        flex-shrink: 1;
     }
 
     .lines {
@@ -711,10 +724,6 @@ h2 {
 
     .s-b .become .button-container .button-text {
         font-size: 16px;
-    }
-
-    .header .header-container .header-logo {
-        padding-left: 30px;
     }
 
     .become-1 .button-container .button-text {
@@ -726,6 +735,7 @@ h2 {
     }
 
     .container {
+        box-sizing: border-box;
         width: 100%;
         margin: 0 auto;
         justify-content: center;
@@ -833,7 +843,7 @@ h2 {
     .masterclass-photographer {
         transform: translateY(-150px);
         width: 80%;
-        height: 700px;
+        height: 800px;
     }
 
     .photographer-content {
@@ -851,7 +861,7 @@ h2 {
     }
 
     .feature-img {
-        width: 100%;
+        width: 50%;
     }
 
     .fourth-bg {
@@ -866,7 +876,7 @@ h2 {
     .quote-author {
         justify-content: center;
         margin: 0 auto;
-        width: 300px;
+        width: 40%;
         flex-direction: column;
         display: flex;
     }
@@ -883,6 +893,10 @@ h2 {
 
     .button-container .button-text {
         font-size: 24px;
+    }
+
+    .button-container .superpeer-bigger{
+        width: 24px;
     }
 
     .author-name {
@@ -910,23 +924,26 @@ h2 {
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+        margin-bottom: 165px;
     }
 
-    .footer {
-        padding-top: 230px;
-        width: 1080px;
-        margin: 0 auto;
+    .footer .footer-container {
+        width: 100%;
+        gap: 20px;
         justify-content: center;
         align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .blog-etc {
-        padding-right: 140px;
-        padding-left: 70px;
+        padding: 0;
+        justify-content: center;
     }
 
     .social-media {
-        padding-right: 247px;
+        padding: 0;
+        justify-content: center;
     }
 
     .first,
@@ -966,6 +983,10 @@ h2 {
         width: 100%;
     }
 
+    .feature-container .feature .feature-title, .feature-desc{
+        width: 100%;
+    }
+
     .fourth-bg .fourth .headline-second-2 {
         width: 100%;
     }
@@ -986,12 +1007,26 @@ h2 {
         width: 100%;
     }
 
-    .seventh-bg .seventh {
+    .seventh-bg, .seventh{
         width: 100%;
+    }
+
+    .seventh .img-line{
+        transform: translateX(0px);
+    }
+
+    .superpeer-logo-big{
+        width: 100%;
+        height: auto;
+        max-height: 204px;
     }
 
     .features .feature-container .feature {
         width: 100%;
     }
-
+    
+    .quote-text{
+        margin: 0 auto;
+        width: 80%;
+    }
 }
