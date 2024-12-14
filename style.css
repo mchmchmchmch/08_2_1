@@ -667,6 +667,12 @@ h2 {
         transform: translateY(20px);
     }
 
+    h1{
+        margin: 0 auto;
+        width: 80%;
+        font-size: 52px;
+    }
+
     ul {
         display: none;
     }
@@ -706,7 +712,8 @@ h2 {
     }
 
     .upper {
-        width: 100%;
+        width: 80%;
+        font-size: 52px;
     }
 
     .burger-container {
@@ -764,11 +771,11 @@ h2 {
     .masterclass-title,
     .feature-title {
         width: 512px;
-        font-size: 48px;
+        font-size: 36px;
     }
 
     .masterclass-author {
-        font-size: 32px;
+        font-size: 25px;
     }
 
     .master-description,
@@ -780,7 +787,7 @@ h2 {
     .starts,
     .date,
     .smol {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .enroll {
@@ -813,17 +820,10 @@ h2 {
         line-height: 1.2;
     }
 
-    .upper {
-        width: 768px;
-        font-size: 82px;
-        line-height: 0.9;
-        padding-bottom: 20px;
-    }
-
     .featured {
         margin: 0 auto;
         width: 724px;
-        font-size: 82px;
+        font-size: 52px;
         line-height: 0.9;
     }
 
@@ -865,7 +865,7 @@ h2 {
     }
 
     .fourth-bg {
-        height: 3000px;
+        height: 2500px;
     }
 
     .feature-desc {
@@ -916,7 +916,7 @@ h2 {
     }
 
     .sixth-bg {
-        height: 3400px;
+        height: 2900px;
     }
 
     .seventh-bg {
@@ -948,11 +948,11 @@ h2 {
 
     .first,
     .headline-2 {
-        width: 100%;
+        width: 90%;
     }
 
     .third-bg .third .featured {
-        width: 100%;
+        width: 90%;
     }
 
     .second-bg .second,
@@ -967,10 +967,6 @@ h2 {
 
     .masterclass {
         width: 80%;
-    }
-
-    .upper {
-        font-size: 72px;
     }
 
     .masterclass-image {
@@ -1004,7 +1000,7 @@ h2 {
     }
 
     .sixth-bg .sixth .headline-second-2 {
-        width: 100%;
+        width: 80%;
     }
 
     .seventh-bg, .seventh{
@@ -1022,10 +1018,12 @@ h2 {
     }
 
     .features .feature-container .feature {
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
     }
     
     .quote-text{
+        font-size: 24px;
         margin: 0 auto;
         width: 80%;
     }
